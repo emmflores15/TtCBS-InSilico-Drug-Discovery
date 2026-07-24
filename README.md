@@ -1,9 +1,9 @@
 # Autonomous In Silico Drug Discovery Pipeline: Target-Mapping the Active Site of Cystathionine β-Synthase in Tetrahymena thermophila and Humans
 
-## 🔬 Project Overview
+## Overview
 This repository hosts an automated, end-to-end computational biology pipeline designed to validate *Tetrahymena thermophila* as a high-fidelity structural surrogate for human Cystathionine β-synthase (CBS) genetics and to execute high-throughput virtual screening (HTVS). By isolating the hyper-conserved catalytic core (centered around the primary PLP-binding Lysine cavity), this pipeline bypasses variable outer-surface loop noise to discover human-ready, non-toxic competitive enzyme inhibitors.
 
-## 📊 Phase-by-Phase Architecture & Validated Metrics
+## Steps Taken
 
 ### Phase 1: Localized Active Site Alignment
 *   **Methodology:** Superposition of the experimental Human CBS crystal structure (`PDB: 4L3V/A`) and an AlphaFold3-predicted monomer model of *Tetrahymena thermophila* CBS (`TTHERM_00558300`). Spatial calculations were restricted strictly to the alpha-carbon (`@ca`) backbones of the primary catalytic core and substrate-stabilizing motifs (Human residues: Lys119, Asn149, Tyr223, and the 256–260 `GTGTG` pocket loop).
@@ -28,15 +28,15 @@ This repository hosts an automated, end-to-end computational biology pipeline de
 *   **Methodology:** Consensus fragment-based machine learning QSAR classification screening emulating SwissADME and ProTox-3.0 neural network metrics. 
 *   **Result:** The leading contrast compounds returned a **Negative** status for Mutagenicity (zero genotoxic risk) and a **Non-Toxic** status for Hepatotoxicity (safe liver clearance profile). Iodixanol yielded an exceptional *In Silico* Therapeutic Index of **52.36**, proving an exceptionally broad, safe clinical dosing window.
 
-## 🛠️ Software Stack & Dependencies
+## Softwares Utilized + Purpose
 *   **UCSF ChimeraX:** Structural pocket isolation and local matchmaker matrix operations.
 *   **AlphaFold3 (DeepMind):** 3D *de novo* coordinate generation of the ciliate target.
 *   **RDKit & Pandas (Python 3):** Cheminformatics parsing, Lipinski structural curation, and data architecture management.
 *   **AutoDock Vina:** Thermodynamic force-field virtual docking execution.
 *   **OpenMM / GROMACS Scripts:** Cloud-based time-series atomic trajectory tracking.
-*   **Matplotlib:** Publication-quality visual infographic generation.
+*   **Matplotlib:** Provided visual infographic generation.
 
-## 📂 Repository Contents
-*   `TtCBS_Drug_Discovery_Pipeline.ipynb`: The master, end-to-end executable Google Colab data science notebook.
+## Contents
+*   `TtCBS_Drug_Discovery_Pipeline.ipynb`: The Google Colab data science notebook containing all code.
 *   `4L3V.pdb`: Experimental structural coordinate source file for Human CBS.
 *   `tetrahymena_cbs.pdb`: AlphaFold3 coordinate source file for *Tetrahymena thermophila* CBS.
