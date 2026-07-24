@@ -30,13 +30,13 @@ This repository contains the complete computational biology pipeline designed to
 *   **Methodology:** Consensus fragment-based machine learning QSAR classification screening emulating SwissADME and ProTox-3.0 neural network metrics. 
 *   **Result:** The leading compounds returned a **Negative** status for Mutagenicity (zero genotoxic risk) and a **Non-Toxic** status for Hepatotoxicity (safe liver clearance profile). Iodixanol yielded an exceptional *In Silico* Therapeutic Index of **52.36**, proving an exceptionally broad, safe clinical dosing window.
 
-## 🛠️ Software Stack & Dependencies
+## Softwares Utilized 
 *   **UCSF ChimeraX:** Structural pocket isolation and local matchmaker matrix operations.
 *   **AlphaFold3 (DeepMind):** 3D *de novo* coordinate generation of the ciliate target.
-*   **RDKit & Pandas (Python 3):** Cheminformatics parsing, Lipinski structural curation, and big data architecture management.
+*   **RDKit & Pandas (Python 3):** Cheminformatics parsing, Lipinski structural curation, and data management.
 *   **AutoDock Vina:** Thermodynamic force-field virtual docking execution.
 *   **OpenMM / GROMACS Scripts:** Cloud-based time-series atomic trajectory tracking.
 
-## 📂 Repository Contents
+## Repository Contents
 *   `TtCBS_Drug_Discovery_Pipeline.ipynb`: The Google Colab data science notebook.
 *   `4L3V.pdb` / `tetrahymena_cbs.pdb`: Raw structural coordinate source files analyzed by the notebook.
