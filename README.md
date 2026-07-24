@@ -2,10 +2,10 @@
 High-Throughput Virtual Screening and Molecular Dynamics Pipeline validating Tetrahymena thermophila as a genetic surrogate.
 # Mass Screening In Silico Drug Discovery Pipeline: Target-Mapping the Active Site of Cystathionine β-Synthase in Tetrahymena thermophila and Humans
 
-## 🔬 Project Overview
+##  Overview
 This repository contains the complete computational biology pipeline designed to validate *Tetrahymena thermophila* as a high-fidelity structural surrogate for human Cystathionine β-synthase (CBS) genetics and to execute a memory-safe batch-processed virtual screen across 1,227 clinical compounds. By centering a tight 15Å virtual bounding box strictly on the catalytic core (the primary PLP-binding Lysine), this pipeline eliminates variable outer-surface loop noise to discover human-ready, non-toxic enzyme inhibitors.
 
-## 📊 Phase-by-Phase Execution Architecture
+## Execution
 
 ### Phase 1: Localized Active Site Alignment
 *   **Methodology:** Superposition of the Human CBS crystal structure (`PDB: 4L3V/A`) and an AlphaFold3-predicted monomer model of *Tetrahymena thermophila* CBS (`TTHERM_00558300`). Structural alignment calculations were restricted strictly to the alpha-carbon (`@ca`) backbones of the primary PLP-binding core and substrate-stabilizing motifs (Human residues: Lys119, Asn149, Tyr223, and the 256–260 `GTGTG` loop).
